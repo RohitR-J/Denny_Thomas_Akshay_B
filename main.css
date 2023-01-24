@@ -1,0 +1,166 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:monospace;
+}
+
+ul {
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+}
+
+.flex {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav{
+    box-shadow:1px 1px rgb(155, 154, 154);
+    display:flex;
+    justify-content:space-between;
+    height:5vh;
+    /* background:rgb(229, 230, 229); */
+}
+
+.logo {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo a {
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-links {
+    justify-content:space-between;
+}
+ul {
+    width:50%;
+    justify-content:space-between;
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+main {
+    height:95vh;
+    background:url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left {
+    align-items:center;
+    justify-content:start;
+    flex-direction:column;
+    margin-left:-400px;
+}
+.main-text {
+    margin-top:15%;
+    font-size:30px;
+    font-weight:bold;
+    /* padding-left:150px; */
+}
+.explore {
+    cursor:pointer; margin-top:30px;
+    padding:10px;
+    border:2px solid white;
+}
+
+.explore a {
+   
+    font-size:20px;
+    font-weight:bold;
+    padding:20px;
+}
+
+.aboutbg {
+    height:95vh;
+    /* background:url("./images/aboutbg2.jpg"); */
+    background-size: cover;
+
+}
+
+.wrapper {
+    display:flex;
+    width:100%;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.box {
+    padding:30px;
+}
+
+.box img {
+    border-radius:15px;
+    flex-direction:row;
+    height:200px;
+    width:200px;
+}
+
+.links {
+    height:50px;
+    margin-top:-5px;
+    background:rgba(153, 150, 150, 0.781);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display:flex;
+    justify-content:center;
+}
+
+.links img {
+    margin:10px 10px;
+    height:20px;
+    width:20px;
+}
+
+.input-field {
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.input-field input , button, textarea {
+    width:40%;
+    margin:20px;
+    border:none;
+    border-radius:10px;
+    padding:10px;
+}
+
+.input-field textarea {
+    width:40%;
+    margin:20px;
+}
+
+.contact-form {
+    display:flex;
+    height:95vh;
+    width:100%;
+    align-items:center;
+    justify-content:start;
+
+}
+
+.contact-form-wrap {
+    border-radius:10px;
+    height:70%;
+    width:50%;
+    align-items:center;
+    justify-content:start;
+    margin-left:25% ;
+    background:rgb(247, 239, 140);
+}
+ 
+.desig {
+    font-size:20px;
+}

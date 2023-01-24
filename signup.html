@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alibabu Express</title>
+    <link rel="stylesheet" href="./main.css">
+    <script>
+         
+         function check() {
+            let name = document.getElementById("Username").value;
+            let email = document.getElementById("Email").value;
+            let Password = document.getElementById("Password").value;
+            let CPassword = document.getElementById("CPassword").value;
+            // alert("hi0");
+            // alert(Password);
+            if(name.length==0 || email.length==0 || Password.length==0 || CPassword.length==0) {
+            alert("empty fields");
+        } else {
+            if(Password!=CPassword) {
+          alert("Password not match");
+        } else {
+            alert("Signup Success");
+        }
+        }
+        
+
+       
+
+        // }
+        // function chec() {
+        //     let x="";
+        //     x = document.getElementById("nameholder").value;
+        // alert(x);
+        // console.log(x);
+        }
+    </script>
+  </head>
+  <body>
+    <nav>
+        <div class="logo">
+          <a href="#">Ab</a>
+        </div>
+        <ul class="nav-links flex">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about_us.html">About us</a></li>
+          <li><a href="./gallery.html">Product Gallery</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    <div class="contact-form">
+        <div class="contact-form-wrap">
+            <form method="POST" action="signup.html">
+            <div class="input-field flex">
+                <input type="text" placeholder="Username" id="Username" required>
+                <input type="text" placeholder="Email" id="Email" required>
+                <input type="text" placeholder="Password" id="Password" required="">
+                <input type="text" placeholder="Confirm Password" id="CPassword" required="">
+                <button type="submit" onClick="check()">Create Account</button>
+                <h4>Already a user? <a href="./login.html">Login here</a></h4>
+            </div>
+            </form>
+        </div>
+    </div>
+    </body>
+    </html>
